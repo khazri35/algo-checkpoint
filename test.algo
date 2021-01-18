@@ -1,0 +1,30 @@
+ALGORITHM str_Counter 
+VAR
+    numbcar, numbword, numbvowel : integer; 
+    str : CHAR;  
+    numbcar:=0;
+    numbword:=0;
+    numbvowel:=0; 
+    
+BEGIN
+
+write("give a sentence, which ends with a point");
+read(str);
+WHILE (str<>".") DO
+     numbcar++;        
+    IF (str = "a" OR str="e" OR str="i" OR str="o" OR str="u" OR str="y") THEN
+        numbvowel++;
+    END_IF
+    IF (str=" ")
+        numbword++;
+    END_IF
+    
+END_WHILE
+    
+}
+    Write("The length of the sentence is ",numbcar);
+    Write("The number of words in the sentence is ",numbword);
+    Write("he number of vowels in the sentence. is ",numbvowel);
+
+    
+END
